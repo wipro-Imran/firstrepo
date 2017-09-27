@@ -1,0 +1,25 @@
+package classassignment;
+
+public class Reversedconcatenatedstring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Enter 2 strings");
+		String a = (args[0]);
+		String b = (args[1]);
+		
+		int stringLength = b.length() -1;
+		String newString = "";
+		for (int i = stringLength; i >=0; i--)
+		{
+			newString += b.charAt(stringLength); //character at that certain position 
+			stringLength--;
+		}
+		
+		System.out.println("String 1: " + a);
+		System.out.println("String 1: " + b);
+		
+		System.out.println(a +  " " + newString);
+}
+}
