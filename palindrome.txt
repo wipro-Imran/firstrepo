@@ -1,0 +1,29 @@
+package classassignment;
+import java.util.Scanner;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a,num,b,reverse=0;
+		Scanner scanner =new Scanner(System.in);
+		System.out.println("Enter set of numbers");
+		num=scanner.nextInt();
+		b=num;
+		
+		while(num>0)
+		{
+			a=num%10;
+			num=num/10;
+			reverse=reverse*10+a;
+		}
+		if (reverse==b)
+		{
+			System.out.println("Palindrome");
+		}
+		else{
+			System.out.println("Not Palindrome"); 
+		}
+	}
+}
